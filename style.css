@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+}
+#choices{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    
+}  
+button{
+    font-size: 1.5rem;
+    min-width: 140px;
+    height:70px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(164, 103, 235);
+}
+button:hover{
+    background-color: rgb(147, 69, 241);
+}
+
+#player{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#computer{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.yellowText{
+    color:yellow;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px
+}
+.greenText{
+    color:green;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px
+}
+.redText{
+    color:red;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+#reset {
+  padding: 8px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(164, 103, 235);
+}
+#reset:hover{
+    background-color: rgb(147, 69, 241);
+}
+
+div h2{
+    margin-top  : 40px;
+}
+
+#player_score{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#comp_score{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+body.dark-mode button {
+  
+  background-color: rgb(164, 103, 235);
+  color: white;
+}
+
+
+
+#theme-toggle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: all 0.3s ease;
+
+  /* 👇 This positions the button at the bottom-right */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+
+  #player, #computer, #player_score, #comp_score {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #choices {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    width: auto;
+  }
+
+  #result {
+    font-size: 1.4rem;
+  }
+
+  #player, #computer, #player_score, #comp_score {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 14px 22px;
+  }
+
+  #result {
+    font-size: 1.6rem;
+  }
+
+  #player, #computer, #player_score, #comp_score {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  #choices {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 15px 25px;
+  }
+
+  #result {
+    font-size: 2rem;
+  }
+
+  #player, #computer, #player_score, #comp_score {
+    font-size: 1.2rem;
+  }
+}
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STONE PAPER SCISSOR </h1>
+    <div id="choices">
+    <button onclick="playGame('stone')">👊 Stone</button>
+    <button onclick="playGame('paper')">✋Paper</button>
+    <button onclick="playGame('scissors')">✌️Scissors</button>
+    </div>
+    <div id="player">👧PLAYER :</div>
+    <div id="computer">🤖COMPUTER :</div>
+    <div id="result"></div>
+    <div>
+        <h2>SCOREBOARD</h2>
+        <div id="player_score">👧PLAYER:</div>
+        <div id="comp_score">🤖COMPUTER:</div>
+    </div>
+    <button id="reset" onclick="resetGame()">🔄Reset</button>
+
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
